@@ -43,13 +43,13 @@ Dubai.customercookiesnumber();
 Paris.customercookiesnumber();
 Lima.customercookiesnumber();
 
-console.log(shops);
-console.log(Loctions.prototype);
+// console.log(shops);
+// console.log(Loctions.prototype);
 
 // Making The Table 
 // hours
 let parent = document.getElementById('creatTable');
-console.log(parent);
+// console.log(parent);
 
 let table = document.createElement('table');
 parent.appendChild(table);
@@ -65,93 +65,168 @@ for (let i = 0; i < hours.length; i++) {
 }
 
 // Seattl row
+Loctions.prototype.render = function () {
+    this.customercookiesnumber();
 
-let firstRow = document.createElement('tr')
-table.appendChild(firstRow)
+    let firstRow = document.createElement('tr')
+    table.appendChild(firstRow)
 
-let location1 = document.createElement('td')
-firstRow.appendChild(location1);
-location1.textContent = 'Seattle';
+    let location1 = document.createElement('td')
+    firstRow.appendChild(location1);
+    location1.textContent = 'Seattle';
 
+    let Seattltotal = 0
+    for (let i = 0; i < 14; i++) {
+        let SeattlElements = document.createElement('td');
+        firstRow.appendChild(SeattlElements)
+        SeattlElements.textContent = Math.floor(Seattle.cookiesnumber[i]);
+        Seattltotal = Seattltotal + Seattle.cookiesnumber[i]
+
+    }
+    // console.log(Seattltotal); 
+    let Seattltotaltd = document.createElement('td')
+    firstRow.appendChild(Seattltotaltd);
+    Seattltotaltd.textContent = Math.floor(Seattltotal);
+
+}
+console.log(Seattle.Seattltotal);
+Seattle.render();
+
+
+//  Tokyo row 
+
+Loctions.prototype.render = function () {
+    this.customercookiesnumber();
+let secondRow = document.createElement('tr')
+table.appendChild(secondRow)
+
+let location2 = document.createElement('td')
+secondRow.appendChild(location2);
+location2.textContent = 'Tokyo';
+
+let Tokyototal = 0
 for (let i = 0; i < 14; i++) {
-    let SeattlElements = document.createElement('td');
-    firstRow.appendChild(SeattlElements)
-    SeattlElements.textContent = Seattle.customercookiesnumber();
-
+    let TokyoElements = document.createElement('td');
+    secondRow.appendChild(TokyoElements)
+    TokyoElements.textContent = Math.floor(Tokyo.cookiesnumber[i]);
+    Tokyototal = Tokyototal + Tokyo.cookiesnumber[i]
 
 }
 
-// //  Tokyo row 
-// let secondRow = document.createElement('tr')
-// table.appendChild(secondRow)
+let Tokyototaltd = document.createElement('td')
+secondRow.appendChild(Tokyototaltd);
+Tokyototaltd.textContent = Math.floor(Tokyototal);
+}
+Tokyo.render();
 
-// let location2 = document.createElement('td')
-// secondRow.appendChild(location2);
-// location2.textContent = 'Tokyo';
+//  Dubai
+Loctions.prototype.render = function () {
+    this.customercookiesnumber();
 
-// for (let i = 0; i < 14; i++) {
-//     let TokyoElements = document.createElement('td');
-//     secondRow.appendChild(TokyoElements)
-//     TokyoElements.textContent = Tokyo.customercookiesnumber();
+let thirdRow = document.createElement('tr')
+table.appendChild(thirdRow)
 
+let location3 = document.createElement('td')
+thirdRow.appendChild(location3);
+location3.textContent = 'Dubai';
 
-// }
+let Dubaitotal = 0;
+for (let i = 0; i < 14; i++) {
+    let DubaiElements = document.createElement('td');
+    thirdRow.appendChild(DubaiElements)
+    DubaiElements.textContent = Math.floor(Dubai.cookiesnumber[i]);
+    Dubaitotal = Dubaitotal + Dubai.cookiesnumber[i]
 
-// //  Dubai
-// let thirdRow = document.createElement('tr')
-// table.appendChild(thirdRow)
+}
 
-// let location3 = document.createElement('td')
-// thirdRow.appendChild(location3);
-// location3.textContent = 'Dubai';
+let Dubaitotaltd = document.createElement('td')
+thirdRow.appendChild(Dubaitotaltd)
+Dubaitotaltd.textContent = Math.floor(Dubaitotal)
 
-// for (let i = 0; i < 14; i++) {
-//     let DubaiElements = document.createElement('td');
-//     thirdRow.appendChild(DubaiElements)
-//     DubaiElements.textContent = Dubai.customercookiesnumber();
+}
+Dubai.render();  
 
+// Paris
+Loctions.prototype.render = function () {
+    this.customercookiesnumber();
+    
+let fourthRow = document.createElement('tr')
+table.appendChild(fourthRow)
 
-// }
+let location4 = document.createElement('td')
+fourthRow.appendChild(location4);
+location4.textContent = 'Paris';
 
-// // Paris
-// let fourthRow = document.createElement('tr')
-// table.appendChild(fourthRow)
-
-// let location4 = document.createElement('td')
-// fourthRow.appendChild(location4);
-// location4.textContent = 'Paris';
-
-// for (let i = 0; i < 14; i++) {
-//     let ParisElements = document.createElement('td');
-//     fourthRow.appendChild(ParisElements)
-//     ParisElements.textContent = Paris.customercookiesnumber();
-
-
-// }
-
-// // Lima
-// let fifthRow = document.createElement('tr')
-// table.appendChild(fifthRow)
-
-// let location5 = document.createElement('td')
-// fifthRow.appendChild(location5);
-// location5.textContent = 'Lima';
-
-// for (let i = 0; i < 14; i++) {
-//     let LimaElements = document.createElement('td');
-//     fifthRow.appendChild(LimaElements)
-//     LimaElements.textContent = Lima.customercookiesnumber();
+let Paristotal = 0;
+for (let i = 0; i < 14; i++) {
+    let ParisElements = document.createElement('td');
+    fourthRow.appendChild(ParisElements)
+    ParisElements.textContent = Math.floor(Paris.cookiesnumber[i]);
+    Paristotal = Paristotal + Paris.cookiesnumber[i]
 
 
-// }
+}
+let Paristotaltd = document.createElement('td')
+fourthRow.appendChild(Paristotaltd)
+Paristotaltd.textContent = Math.floor(Paristotal)
+}
+Paris.render();
 
-// //Total
-// let totalRow = document.createElement('tr')
-// table.appendChild(totalRow)
 
-// let total = document.createElement('td')
-// totalRow.appendChild(total);
-// total.textContent = 'Total';
+
+// Lima
+
+Loctions.prototype.render = function () {
+    this.customercookiesnumber();
+
+let fifthRow = document.createElement('tr')
+table.appendChild(fifthRow)
+
+let location5 = document.createElement('td')
+fifthRow.appendChild(location5);
+location5.textContent = 'Lima';
+
+let Limatotal = 0;
+for (let i = 0; i < 14; i++) {
+    let LimaElements = document.createElement('td');
+    fifthRow.appendChild(LimaElements)
+    LimaElements.textContent = Math.floor(Lima.cookiesnumber[i]);
+    Limatotal = Limatotal + Lima.cookiesnumber[i]
+
+}
+
+let Limatotaltd = document.createElement('td')
+fifthRow.appendChild(Limatotaltd)
+Limatotaltd.textContent = Math.floor(Limatotal)
+}
+Lima.render();
+
+//Total
+let totalRow = document.createElement('tr')
+table.appendChild(totalRow)
+
+let total = document.createElement('td')
+
+totalRow.appendChild(total);
+// th.setAttribute("class", "totalth");
+
+total.textContent = 'Total';
+
+for (let i = 0; i < 14; i++) {
+    let TotalElements = document.createElement('td');
+    totalRow.appendChild(TotalElements)
+    TotalElements.textContent = '';
+
+}
+
+let allLocationsTotal = Lima.Limatotal + Paris.Paristotal + Dubai.Dubaitotal + Tokyo.Tokyototal + Seattle.Seattltotal ;
+
+let allLocationsTotaltd = document.createElement('td')
+totalRow.appendChild(allLocationsTotaltd)
+allLocationsTotaltd.textContent = Math.floor(allLocationsTotal)
+
+
+
 
 
 
