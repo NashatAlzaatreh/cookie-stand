@@ -148,3 +148,31 @@ footer p {
     top: 8%;
 
 }
+
+
+#creatTable table {
+    margin-left: 10px;
+    
+    margin-top: 45px;
+    
+    
+
+}
+#creatTable table tr { 
+    
+    padding: 10px;
+}
+
+#creatTable table tr td { 
+    border: solid black 1px;
+    margin: 20px;
+    padding: 25px;
+}
+
+#creatTable table tr th { 
+    
+    padding: 7px;
+    
+
+    
+}
