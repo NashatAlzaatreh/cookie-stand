@@ -129,3 +129,22 @@ footer p {
     padding: 10px;
     font-weight: bold;
 }
+
+
+/* home css */
+
+ main img {
+    
+    background-color: #F3F0D7;
+    padding-left: 50%;
+    padding-right: 50%;
+    
+}
+
+#welcome {
+    position: absolute;
+    margin-left: 35%;
+    color: rgb(148, 108, 56);
+    top: 8%;
+
+}
