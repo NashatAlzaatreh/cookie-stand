@@ -9,7 +9,7 @@ header{
     position: fixed;
     top: 0%;
     width: 100%;
-    padding: 5px;
+    padding: 8px;
 
     
 
@@ -18,7 +18,7 @@ header{
 header h1 {
     color: #D8B384;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     float: left;
     margin-left: 10px;
     
@@ -38,7 +38,7 @@ header nav ul li:hover{
 header nav ul li a {
     text-decoration: none;
     color: #5E454B ;
-    font-size: 20px;
+    font-size: 30px;
     float: right;
 
 }
@@ -47,22 +47,8 @@ header nav ul {
     margin-left: 150px;
 }
 
-main  {
-    margin-top: 100px;
-    color: #5E454B;
-    margin-right: 750px;
-    font-size: 30px;
-}
 
-main h2 {
-    font-size: 45px;
-    margin-left: 40px;
-}
-main h3{
-    font-size: 35px;
-    margin-left: 40px;
-    margin-top: 25px;
-}
+
 #data ul li {
     list-style:disc;
     font-size: 25px;
@@ -126,28 +112,12 @@ footer p {
     text-align: center;
     background-color: #CEE5D0;
     color: #dbac6f;
-    padding: 10px;
+    padding: 15px;
     font-weight: bold;
 }
 
 
-/* home css */
 
- main img {
-    
-    background-color: #F3F0D7;
-    padding-left: 50%;
-    padding-right: 50%;
-    
-}
-
-#welcome {
-    position: absolute;
-    margin-left: 35%;
-    color: rgb(148, 108, 56);
-    top: 8%;
-
-}
 
 
 #creatTable table {
@@ -179,4 +149,104 @@ footer p {
 
 #creatTable table tr th:last-of-type {
     border: solid black 1px;
+}
+
+
+/* home css */
+
+header img {
+    float: left;
+    width: 150px;
+    height: 50px;
+}
+
+
+main  {
+    margin-top: 100px;
+    color: #5E454B;
+    margin-right: 750px;
+    font-size: 30px;
+}
+
+main h2 {
+    font-size: 45px;
+    margin-left: 40px;
+}
+main h3{
+    font-size: 35px;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+/* main img {
+    
+    background-color: #F3F0D7;
+    padding-left: 50%;
+    padding-right: 50%;
+    
+} */
+#welcome {
+    position: relative;
+    text-align: center;
+    left: 25%;
+    color: rgb(148, 108, 56);
+    top: 6%;
+}
+#welcomImg {
+    background-color: #F3F0D7;
+    padding-left: 50%;
+    padding-right: 109%;
+}
+
+
+
+
+body {
+    background-color: #D8B384;
+    position: relative;
+    margin-bottom: 5%
+    
+    
+
+}
+
+
+#family{
+    float: left;
+    width: 1100x;
+    margin: 50px;
+    margin-left: 20;
+    color: rgb(148, 108, 56);
+    
+    
+}
+
+.family{ 
+    margin-left: 70px;
+}
+
+ #proud{
+     background-color: #CEE5D0;
+    float: left;
+    width: 800px;
+    margin: 100px;
+   
+} 
+    
+
+.MENU {
+    margin-left: 1300px;
+    background-color:#CEE5D0 ;
+}
+    
+.LOCATIONS {
+    background-color:#CEE5D0 ;
+    margin-left: 400px;
+    margin-right: 100px;
+}
+   
+.HOURS { 
+    background-color:#CEE5D0 ;
+    margin-left: 600px;
+    margin-right: 200px;
 }
