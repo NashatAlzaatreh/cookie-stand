@@ -176,3 +176,7 @@ footer p {
 
     
 }
+
+#creatTable table tr th:last-of-type {
+    border: solid black 1px;
+}
