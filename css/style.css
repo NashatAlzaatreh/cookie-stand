@@ -250,3 +250,35 @@ body {
     margin-left: 600px;
     margin-right: 200px;
 }
+
+fieldset { 
+    border:solid 5px #5E454B ;
+    margin-left: 50%;
+    width: 50%;
+    background-color: #CEE5D0 ;
+    margin-top: 30px
+}
+
+#formLegand {
+    background-color: #bac578 ;
+    margin-left: 50px;
+    ;
+}
+
+#submit {
+    font-size: 35px;
+    margin: 25px;
+    float: right;
+    color: #000000;
+    background-color:#bac578 ;
+}
+
+#submit:hover{
+    color: #bac578;
+    background-color:black ;
+}
+
+.formElements{
+    margin: 15px;
+    
+}
