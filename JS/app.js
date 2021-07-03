@@ -38,25 +38,22 @@ let Tokyo = new Loctions('Tokyo', 3, 21, 1.2);
 let Dubai = new Loctions('Dubai', 11, 38, 3.7);
 let Paris = new Loctions('Paris', 20, 38, 2.3);
 let Lima = new Loctions('Lima', 2, 16, 4.6);
-// calling
-// Seattle.customercookiesnumber();
-// Tokyo.customercookiesnumber();
-// Dubai.customercookiesnumber();
-// Paris.customercookiesnumber();
-// Lima.customercookiesnumber();
 
 
-// console.log(shops);
+
+console.log(shops);
 // console.log(Loctions.prototype);
 
 // Making The Table 
 // hours
+
 let parent = document.getElementById('creatTable');
 // console.log(parent);
 
 let table = document.createElement('table');
 parent.appendChild(table);
 
+function makeHoursFooter () {
 let headingRow = document.createElement('tr');
 table.appendChild(headingRow);
 
@@ -66,7 +63,8 @@ for (let i = 0; i < hours.length; i++) {
     workinghours.textContent = hours[i]
 
 }
-
+}
+makeHoursFooter ();
 
 // Render
 
@@ -88,12 +86,14 @@ Loctions.prototype.render = function () {
         tdElement.textContent = Math.floor(this.cookiesnumber [i]);    
     }
 
+    // total cookies number perDAy
+
     let totalEachshopDay = document.createElement('td');
     dataRow.appendChild(totalEachshopDay);
     totalEachshopDay.textContent=Math.floor(this.totalcookiesnumberperDAy) ;
 }
 
-// or calling them iside a loop
+//  calling them iside a loop
 for (let i = 0; i < shops.length; i++) {
     shops[i].customercookiesnumber();
     shops[i].render();
@@ -130,6 +130,73 @@ function makeFooter () {
     finalTd.textContent= Math.floor(megaTotal) ; 
 }
 makeFooter() ; 
+
+
+// newLocationForm
+
+const newLocationForm = document.getElementById('newLocationForm');
+newLocationForm.addEventListener('submit', submitoutputs);
+
+function submitoutputs (event) {
+    event.preventDefault(); 
+    console.log(event);
+
+    const newLocation = event.target.newLocation.value ; 
+    console.log(newLocation);
+
+    let minCustomers = event.target.minCustomers.value ; 
+    console.log(minCustomers);
+    minCustomers = parseInt(minCustomers);
+    console.log(typeof minCustomers);
+
+
+    let maxCustomers = event.target.maxCustomers.value ; 
+    console.log(maxCustomers);
+    maxCustomers = parseInt(maxCustomers); 
+
+    let avgCustomers = event.target.avgCustomers.value ; 
+    console.log(avgCustomers);
+    avgCustomers = parseFloat(avgCustomers);
+    
+    const newLocationObject = new Loctions ( newLocation, minCustomers, maxCustomers, avgCustomers )
+    console.log(newLocationObject);
+    
+    table.textContent = "" ; 
+
+
+       
+
+    //  Hours Row
+    makeHoursFooter ();
+
+    // calling all rows  iside a loop
+for (let i = 0; i < shops.length; i++) {
+    shops[i].totalcookiesnumberperDAy= 0 ;
+    shops[i].customerperhour=[];
+    shops[i].cookiesnumber=[];
+    shops[i].customercookiesnumber();
+    shops[i].render();
+
+}
+// Total Row 
+makeFooter() ; 
+
+}
+
+console.log(shops);
+
+
+
+
+
+
+// ==== previous attempts ==== *** neglect it *** 
+// calling
+// Seattle.customercookiesnumber();
+// Tokyo.customercookiesnumber();
+// Dubai.customercookiesnumber();
+// Paris.customercookiesnumber();
+// Lima.customercookiesnumber();
 
 // Seattl row
 // Loctions.prototype.render = function () {

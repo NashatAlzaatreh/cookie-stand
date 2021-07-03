@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,22 @@
     <title>Salmon Cookies-Sales Data</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    
+
 </head>
+
 <body>
     <header>
-        <img src="https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png"  alt="Salmon Cookies logo" >
+        <img src="https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png"
+            alt="Salmon Cookies logo">
 
         <h1>
-            Sales Data  
+            Sales Data
         </h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/sales.html">Sales</a></li>
-                
+
             </ul>
         </nav>
     </header>
@@ -28,9 +31,39 @@
 
         <h2> Sales Data </h2>
         <!-- <h3> Seattle </h3> -->
-        
+
+
+
+        <form id="newLocationForm">
+
+            <fieldset>
+                <legend id="formLegand">Adding New Salmon Cookies Locations</legend>
+                <div class="formElements">
+                    <label for="newLocation">New Location Name:</label>
+                    <input type="text" id="newLocation" required>
+                </div>
+                <div class="formElements">
+                    <label for="minCustomers">Minimum Customers Number:</label>
+                    <input type="number" id="minCustomers" min="1" max="200" required>
+                </div>
+                <div class="formElements">
+                    <label for="maxCustomers">Maximum Customers Number:</label>
+                    <input type="number" id="maxCustomers" min="1" max="200" required>
+                </div>
+                <div class="formElements">
+                    <label for="avgCustomers">Avg Customers :</label>
+                    <input type="number" id="avgCustomers" step="0.1" min="1" max="20" required>
+                </div>
+                <div class="formElements">
+                    <input id="submit" type="submit" value="Submit">
+                </div>
+
+            </fieldset>
+        </form>
+
         <div id="creatTable"></div>
-         <!-- <h3>Tokyo</h3>	
+
+        <!-- <h3>Tokyo</h3>	
          <div id="data2"></div>
          <h3>Dubai</h3>	
          <div id="data3"></div>
@@ -42,9 +75,10 @@
     </main>
 
     <footer>
-       <p> &copy;Salmon Cookies 2021 </p> 
+        <p> &copy;Salmon Cookies 2021 </p>
     </footer>
     <script src="../JS/app.js"></script>
-    
+
 </body>
+
 </html>
