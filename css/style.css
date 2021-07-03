@@ -65,8 +65,8 @@ footer p {
     font-weight: bold;
 }
 
-body {
-    margin-bottom: 2600px;
+#homeBody {
+    margin-bottom: 2800px;
 }
 
 
@@ -129,11 +129,12 @@ header img {
 }
 
 main h2 {
-    
+    font-family: 'Playfair Display', serif;
     font-size: 45px;
     position: absolute;
     top: 60px;
-    left: 35%;
+    width: 100%;
+    text-align: center;
     background-color: #dabf9d;
     
 
@@ -145,18 +146,20 @@ main h2 {
     background-color: #F3F0D7;
     position: absolute;
     top: 110px;
-    left: 25%;
+    width: 100%;
+    text-align: center;
     
 }
 
 
 
 #family{
+    font-family: 'Playfair Display', serif;
     position: absolute;
     font-size: 35px;
-    top: 400px;
-    left: 20%;
-    
+    top: 385px;
+    width: 100%;
+    text-align: center;    
     background-color: #dabf9d;
     
     
@@ -181,13 +184,17 @@ main h2 {
 } 
    
 #proud h3 {
+    font-family: 'Playfair Display', serif;
     font-size: 25px;
     margin-left: 40%;
 }
 #proud p {
+    
     font-size: 20px;
     text-align: center;
     background-color: cadetblue;
+    font-family: Arial, sans-serif;
+    color: blanchedalmond;
 
 }
 #proud img {
@@ -225,13 +232,14 @@ width: 40%;
     font-size: 28px;
     color: #ceca07;;
     left: 15px;
+    font-family: Georgia, serif;
     
 }
 
 #locationimg {
     position: absolute;
     top: 2200px;
-    width: 700px;
+    width: 780px;
     height: 300px;
 }
   
@@ -245,74 +253,27 @@ width: 40%;
 
 } 
 
-/* 
-
-
-
-
-
-#welcome {
-    position: relative;
+#contactDiv {
+    position: absolute;
+    top: 2600px;
+    font-size: 30px;
+    background-color: rgb(134, 110, 77);
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    left: 25%;
-    color: rgb(148, 108, 56);
-    top: 6%;
 }
 
+/* Sales */
 
-
-
-
-
-
-
-#family{
-    float: left;
-    width: 1100x;
-    margin: 50px;
-    margin-left: 20;
-    color: rgb(148, 108, 56);
+#mainheder{
+    margin-top: 50px;
     
-    
-}
-
-.family{ 
-    margin-left: 70px;
-}
-
- #proud{
-     background-color: #CEE5D0;
-    float: left;
-    width: 800px;
-    margin: 100px;
-   
 } 
-    
-
-.MENU {
-    margin-left: 1300px;
-    background-color:#CEE5D0 ;
-}
-    
-.LOCATIONS {
-    background-color:#CEE5D0 ;
-    margin-left: 400px;
-    margin-right: 100px;
-}
-   
-.HOURS { 
-    background-color:#CEE5D0 ;
-    margin-left: 600px;
-    margin-right: 200px;
-
-} */
-=======
-}
 
 fieldset { 
     border:solid 5px #5E454B ;
     margin-left: 50%;
-    width: 50%;
+    width: 70%;
     background-color: #CEE5D0 ;
     margin-top: 30px
 }
@@ -340,4 +301,6 @@ fieldset {
     margin: 15px;
     
 }
+
+
 
