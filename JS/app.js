@@ -41,7 +41,7 @@ let Lima = new Loctions('Lima', 2, 16, 4.6);
 
 
 
-// console.log(shops);
+console.log(shops);
 // console.log(Loctions.prototype);
 
 // Making The Table 
@@ -52,6 +52,7 @@ let parent = document.getElementById('creatTable');
 
 let table = document.createElement('table');
 parent.appendChild(table);
+
 function makeHoursFooter () {
 let headingRow = document.createElement('tr');
 table.appendChild(headingRow);
